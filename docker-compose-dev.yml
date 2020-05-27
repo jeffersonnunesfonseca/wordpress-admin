@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    image: wordpress:5.4.1
+    container_name: wpadmin
+    restart: always
+    ports:
+      - "8000:80"
+    volumes: 
+      - "./src/themes:/var/www/html/wp-content/themes/"
+      - "./src/plugins:/var/www/html/wp-content/plugins/"
+      - "./src/wp-config.php:/var/www/html/wp-config.php"    
+      - "./src/.htaccess:/var/www/html/.htaccess"
+      - "./src/data:/var/www/html/wp-content/uploads"
+    environment: 
+      DB_NAME: "wpadmin"
+      DB_USER: "root"
+      DB_PASSWORD: "root"
+      DB_HOST: "192.168.15.200:3308"
+      PORT_WP: "8000"
