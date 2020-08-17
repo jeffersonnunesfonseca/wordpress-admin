@@ -46,12 +46,12 @@ define( 'WP_AUTO_UPDATE_CORE' , false );
 
 define( 'WPMS_ON', true ); // True turns on the whole constants support and usage, false turns it off.
 define( 'WPMS_DO_NOT_SEND', false ); // Or false, in that case constant is ignored.
-define( 'WPMS_MAIL_FROM', 'bounces+16343161@em7137.lojascloud.com.br' );
+define( 'WPMS_MAIL_FROM', 'bounces+18131594@em8618.itsd.com.br' );
 define( 'WPMS_MAIL_FROM_FORCE', true ); // True turns it on, false turns it off.
 define( 'WPMS_MAIL_FROM_NAME', $_SERVER['HTTP_HOST'] );
 define( 'WPMS_MAIL_FROM_NAME_FORCE', true ); // True turns it on, false turns it off.
 define( 'WPMS_MAILER', 'sendgrid' ); // Possible values: 'mail', 'smtpcom', 'sendinblue', 'mailgun', 'sendgrid', 'gmail', 'smtp'.
-define( 'WPMS_SENDGRID_API_KEY', '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' );
+define( 'WPMS_SENDGRID_API_KEY', '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' );
 
 
 /** Database Charset to use in creating database tables. */
