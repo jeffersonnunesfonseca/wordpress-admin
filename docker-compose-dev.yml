@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
   app:
     image: wordpress:5.4.1
@@ -16,6 +16,6 @@ services:
     environment: 
       DB_NAME: "wpadmin"
       DB_USER: "root"
-      DB_PASSWORD: "root"
+      DB_PASSWORD: "@#itsd!2020"
       DB_HOST: "192.168.15.200:3306"
       PORT_WP: "8000"
