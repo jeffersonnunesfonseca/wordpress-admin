@@ -6,6 +6,7 @@ services:
     restart: always
     ports:
       - "8000:80"
+    mem_limit: 300m
     volumes: 
       - "./src/themes:/var/www/html/wp-content/themes/"
       - "./src/plugins:/var/www/html/wp-content/plugins/"
