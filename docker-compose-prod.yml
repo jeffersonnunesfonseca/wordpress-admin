@@ -16,5 +16,5 @@ services:
       DB_NAME: "wpadmin"
       DB_USER: "root"
       DB_PASSWORD: "@#itsd!2020"
-      DB_HOST: "167.114.176.32:3306"
+      DB_HOST: "162.144.237.8:3306"
       PORT_WP: "8000"
