@@ -61,7 +61,7 @@ define('DB_COLLATE', 'utf8_general_ci');
 define('WPLANG', 'pt_BR');
 define( 'WP_DEBUG', false );
 
-if($_SERVER['HTTP_HOST']=='162.144.237.8:'.$_ENV["PORT_WP"] || $_SERVER['HTTP_HOST']=='192.168.15.200:'.$_ENV["PORT_WP"])
+if($_SERVER['HTTP_HOST']=='167.114.176.32:'.$_ENV["PORT_WP"] || $_SERVER['HTTP_HOST']=='192.168.15.200:'.$_ENV["PORT_WP"])
 	header('Location: https://'.$_SERVER['HTTP_HOST'].'/wp-admin/');
 
 /**#@+
