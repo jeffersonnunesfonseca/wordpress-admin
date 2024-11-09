@@ -1,0 +1,6 @@
+# Ignore todos os arquivos
+*
+
+!.gitignore
+!docker-compose.yml
+!up.sh
