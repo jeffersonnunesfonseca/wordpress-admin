@@ -19,7 +19,7 @@ services:
        - db
      image: wordpress:latest
      ports:
-       - "8043:443"
+       - "8041:80"
      volumes:
        - ./plugins:/var/www/html/wp-content/plugins
        - ./themes:/var/www/html/wp-content/themes
