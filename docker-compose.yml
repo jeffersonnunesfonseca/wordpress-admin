@@ -4,6 +4,7 @@ services:
    db:
      container_name: wpit-db
      image: mysql:5.7
+     command: --port=3307
      volumes:
        - ./db_data:/var/lib/mysql
      restart: always
@@ -12,6 +13,7 @@ services:
        MYSQL_DATABASE: it
        MYSQL_USER: admin
        MYSQL_PASSWORD: password
+
 
    wordpress:
      container_name: it-wp
@@ -25,7 +27,7 @@ services:
        - ./themes:/var/www/html/wp-content/themes
      restart: always
      environment:
-       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_HOST: db:3307
        WORDPRESS_DB_USER: admin
        WORDPRESS_DB_PASSWORD: password
        WORDPRESS_DB_NAME: it
